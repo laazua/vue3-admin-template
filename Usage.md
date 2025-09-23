@@ -15,7 +15,7 @@ cat README.md
 npm install mockjs vite-plugin-mock --save-dev
 ```
 
--- **配置本地mock**
+- **配置本地mock**
 ```js
 ## 参考 vite.config.js
 import { defineConfig } from 'vite'
@@ -35,7 +35,7 @@ export default defineConfig({
 })
 ```
 
--- **配置.env.xxx**
+- **配置.env.xxx**
 ```json
 ## 替换 package.json 中
 {
