@@ -29,19 +29,19 @@ export default [
             name: 'system',
             component: 'Layout',
             redirect: '/system/menu',
-            meta: { title: '系统管理', icon: '' },
+            meta: { title: '系统管理', icon: 'Tools' },
             children: [
               {
                 path: 'role',
                 name: 'role',
                 component: 'Role',
-                meta: { title: '角色管理', icon: '' }
+                meta: { title: '角色管理', icon: 'Avatar' }
               },
               {
                 path: 'menu',
                 name: 'menu',
                 component: 'Menu',
-                meta: { title: '菜单管理', icon: '' }
+                meta: { title: '菜单管理', icon: 'Menu' }
               }
             ]
           }

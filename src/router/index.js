@@ -17,7 +17,7 @@ export const staticRoutes = [
       path: 'home',
       name: 'Home',
       component: () => import('@/views/Home.vue'),
-      meta: { title: '首页', icon: 'dashboard' }
+      meta: { title: '首页', icon: 'Grid' }
     }]
   }
 ]
@@ -37,7 +37,7 @@ router.beforeEach(async (to, _form) => {
   if (userStore.token && to.path === '/login') return { path: '/home' }
   // 动态添加用户路由
   if (userStore.token && userStore.userRoutes && !userStore.isLogin) {
-    console.log('动态注册路由', userStore.userRoutes)
+    // console.log('动态注册路由', userStore.userRoutes)
     userStore.userRoutes.forEach(route => router.addRoute(route))
     userStore.isLogin = true
     // 只在动态路由添加后做一次 replace，防止死循环
