@@ -11,7 +11,6 @@ npm install pinia-plugin-persistedstate
 npm install element-plus --save
 npm install @element-plus/icons-vue
 npm install axios
-cat README.md 
 npm install mockjs vite-plugin-mock --save-dev
 ```
 
@@ -37,12 +36,12 @@ export default defineConfig({
 
 - **配置.env.xxx**
 ```json
-## 替换 package.json 中
+// 替换 package.json 中
+// .env .env.development  .env.production 中变量命名以 VITE_ 开头
 {
   "scripts": {
     "dev": "vite --mode development",
     "build:prod": "vite build --mode production"
     }
-}
-## .env .env.development  .env.production 中变量命名以 VITE_ 开头 
+} 
 ```
